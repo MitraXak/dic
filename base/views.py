@@ -34,9 +34,11 @@ def send(request):
                 s = s.decode("utf-8", "ignore")
                 if b == 0 and temOne.search(s):
                     text = "".join(temOne.findall(s)).lower()
+                    text = re.sub(r"[-#%!@*;]", "", text)
                     b = 1
                 elif b==1 and temTwo.search(s) :
                     textTwo = "".join(temTwo.findall(s)).lower()
+                    textTwo = re.sub(r"[-#%!@*;]", "", textTwo)
                     dict = Dict()
                     dict.rush = text
                     dict.englishWord = textTwo
