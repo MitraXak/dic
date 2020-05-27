@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+header,
+main {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap; }
+  header nav ul li {
+    margin: 10px;
+    max-width: 170px;
+    text-align: center; }
+
+main .content {
+  max-width: 800px; }
+  main .content .translate {
+    font-size: 20pt; }
+    main .content .translate span {
+      font-size: 25pt; }
+  main .content form input {
+    margin: 5px 0; }
+
+/*# sourceMappingURL=style.css.map */
